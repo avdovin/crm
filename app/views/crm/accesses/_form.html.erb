@@ -1,0 +1,67 @@
+<h1><%== params[:id] ? "Редактирование карточки доступа" : "Добавление новых доступов" %></h1>
+<div class="rightCol">
+	<% if params[:id] %>
+		<%= link_to 'Удалить', crm_access_path(@access), :confirm => "Вы уверены что хотите удалить домен?", :method => :delete, :class => 'rightBut', :id => 'right-delete' %>
+	<% end %>
+
+	<%= link_to 'Сохранить и продолжить', '', :class => 'rightBut', :id => 'save-and-continue' %>
+	<%= link_to 'Сохранить и закрыть', '', :class => 'rightBut', :id => 'save-and-exit' %>
+
+	<br/>
+	<a href="<%= crm_accesses_path %>" class="rightBut" id="right-delete">К списку доступов</a>
+
+</div>
+<div class="leftCol">
+	<ul class="tabs-menu">
+		<li style="z-index:10;" class="current"><a href="#" style="background-image: url(/crm/img/icon_calend.png);">Карточка доступов</a><ins></ins></li>
+	</ul>
+	<div class="anketa-block">
+
+		<% if @access.errors.any? %>
+			<div class="message message-errors">
+				<ul>
+					<% @access.errors.full_messages.each do |msg| %>
+						<li><%= msg %></li>
+					<% end %>
+				</ul>
+			</div>
+		<% end %>
+
+	 <%= render 'crm/msg' %>
+
+		<%= simple_form_for([@access]) do |f| %>
+			<input type="hidden" name="continue" value="0" />
+			<table class="anketa float-table-3col">
+				<tr>
+					<td colspan="3">
+						<%= f.input :text, label: 'Доступы', input_html: {style: 'height:400px;'} %>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<%= f.input :comment, label: 'Комментарий', input_html: {style: 'height:200px;'} %>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<%= f.association :domain, collection: Crm::Domain.all(order: 'name'), input_html: { style: 'width:96%;height:200px;'} %>
+					</td>
+				</tr>
+			</table>
+		<% end %>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$("#save-and-continue").click(function(){
+		$("input[name=continue]").val(1);
+		$(".anketa-block form").submit();
+		return false;
+	})
+	$("#save-and-exit").click(function(){
+		$("input[name=continue]").val(0);
+		$(".anketa-block form").submit();
+		return false;
+	})
+</script>

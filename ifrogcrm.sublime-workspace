@@ -1,0 +1,596 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"erro",
+				"error_log"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1358,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1601,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "# SQLite version 3.x\n#   gem install sqlite3\n#\n#   Ensure the SQLite 3 gem is defined in your Gemfile\n#   gem 'sqlite3'\n#\ndefault: &default\n  adapter: mysql2\n  pool: 5\n  timeout: 5000\n\ndevelopment:\n  <<: *default\n  database: db/development.sqlite3\n\n# Warning: The database defined as \"test\" will be erased and\n# re-generated from your development database when you run \"rake\".\n# Do not set this db to the same as development or production.\ntest:\n  <<: *default\n  database: db/test.sqlite3\n\nproduction:\n  <<: *default\n  database: db/production.sqlite3\n",
+			"file": "config/database.yml",
+			"file_size": 552,
+			"file_write_time": 130478164130000000,
+			"settings":
+			{
+				"buffer_size": 551,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Plugins/TableList.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/UtilHelpers.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Texts.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Banners.pm",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/form-send.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/tablelist.js",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/tree_elements.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/tree_block.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/AdminController.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Plugins/InitJson.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Access.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/config",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Plugins/Fields.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Catalog.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojolicious/Plugin/Config.pm",
+		"/private/var/folders/wz/3t9z81xd647gc0jl9tz6x9pw0000gn/T/fz3temp-1/.htaccess",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/BaseActions.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojolicious.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojolicious/Static.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojolicious/Types.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojolicious/Routes.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojo/Cache.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Plugins/AnketForm.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/GG/Dbi.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Plugins/Actions.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Plugins/Excel.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Users.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Syslogs.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Templates.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Subscribe.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Seo.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Lists.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Images.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Faq.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Keys.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Styles.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Sysusers.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Vars.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Video.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Vote.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/anketa_edit.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_multselect_input.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/TableList/current_filter.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Feedback/_admin.mail.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Keys.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_multselect.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Feedback/_message_success.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Feedback/form.html.ep",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/separateFiles/dhtmlSuite-formUtil.js-uncompressed.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/dhtml-suite-for-applications.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/separateFiles/dhtmlSuite-formUtil.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/dhtml-suite-for-applications-without-comments.js",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Dbi.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Content.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Menu.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Seo.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/File.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_input.html.ep",
+		"/Users/aleksey/Downloads/dhtml-suite-for-applications/js/dhtml-suite-for-applications-without-comments.js",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_list.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_checkbox.html.ep",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/urlify.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/mselectboxes.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/image-crop.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/edit_area-dop.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/copy_contacts.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/arrange.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/image-slideshow.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/form-send.min.js",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_input_filter.html.ep",
+		"/Users/aleksey/Downloads/Mojolicious-Plugin-Cache-0.0015/lib/Mojolicious/Plugin/Cache/Page.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Sessions.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojo/Util.pm",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/elFinderConnector.class.php",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/elFinderVolumeDriver.class.php",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Filemanager.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Filemanager/elFinder.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Captcha.pm",
+		"/Users/aleksey/Downloads/Mojolicious-Plugin-Cache-0.0015/lib/Mojolicious/Plugin/Cache/Action.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Admin.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojo.pm",
+		"/Users/aleksey/www/gg.dev/.gitignore",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/js/elFinder.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/js/commands/quicklook.js",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Mail.pm",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/elFinder.class.php",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/elFinderVolumeLocalFileSystem.class.php",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/elfinder.html",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/elfinder.php",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/connector.php",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/connector.minimal.php",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla",
+		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/DBIx/Simple/Result/RowObject.pm",
+		"/Users/aleksey/www/gg.dev/README.md",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/Main/user_block.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/TableList/tablelist_container.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/Plugins/File/zipimport_img_node.html.ep",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/page_start.html.ep",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/themes/gg/css/pane-splitter.css",
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Content/Catalog.pm",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/Filemanager/elfinder.html.ep",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/.gitignore",
+		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/Filemanager/elfinder_popup.html.ep",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/elfinder.src.html",
+		"/Users/aleksey/www/gg.dev/httpdocs/admin/ckeditor/config.js",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Admin/Styles.pm",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Admin/AdminController.pm",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Admin/Filemanager.pm",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/templates/Admin/Filemanager/elfinder.html.ep",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/templates/Admin/Filemanager/elfinder_popup.html.ep",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Admin/Plugins/InitJson.pm",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/config",
+		"/Users/aleksey/www/gg.dev/.project",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Plugins/UtilHelpers.pm",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/script/dispatch.fcgi",
+		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG.pm",
+		"/Users/aleksey/www/ggtest.dev/ggtest.sublime-project",
+		"/Users/aleksey/www/ggtest.dev/cgi-bin/templates/Admin/page_admin_main.html.ep",
+		"/Users/aleksey/www/ggtest.dev/cgi-bin/templates/Admin/quick_auth_reload.html.ep",
+		"/Users/aleksey/www/ggtest.dev/cgi-bin/templates/Admin/form_auth.html.ep",
+		"/Users/aleksey/www/ggtest.dev/cgi-bin/extlib/Mojolicious/Validator.pm",
+		"/Users/aleksey/www/ggtest.dev/httpdocs/admin/js/codemirror/demo/variableheight.html"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"razdel",
+			"def_fil",
+			"init_save_filter",
+			"filter_save",
+			"click_type",
+			"ajaxform",
+			"new sack()",
+			"ajax",
+			"click_type",
+			"nodeATag",
+			"file_delete_pict",
+			"pattern",
+			"cache",
+			"print_choose",
+			"set_qedit",
+			"filter_take",
+			"quick_view",
+			"field_delete_pict",
+			"tr",
+			"multiblock_on",
+			"cut",
+			"eSubmittexts",
+			"disabled",
+			"submit",
+			"disabled",
+			"callbackOnFormInvalid",
+			"validation",
+			"disabled",
+			"disableSubmit",
+			"info",
+			"edit",
+			"set_filter",
+			"this.formRef",
+			"__initiallyParseAForm",
+			"getElementById('_'+vElements[no].name)",
+			"getElementById('_' + vElements[no].name",
+			"var input",
+			"A-Z",
+			"lett",
+			"this.formRef=obj;",
+			"this.formRef=obj",
+			"this.formRef=obj;",
+			"__setInitProps",
+			"formRef.getElementsByTagName('INPUT')",
+			"formEl",
+			"validation",
+			"valid",
+			"formRef",
+			"vElements[no]",
+			"vElements",
+			"indicationImages",
+			"__toggleInput",
+			"elType",
+			"validate",
+			"checkbox",
+			"mask",
+			"required",
+			"`update",
+			"b64_decode",
+			"$CACHE",
+			"$cache",
+			"$CAPTCHA",
+			"CACHE",
+			"b64_encode",
+			"CACHE",
+			"$JSON",
+			"'files'",
+			"text_url",
+			"parse",
+			"$mode",
+			"cat",
+			"ip",
+			"{app}",
+			"$path",
+			"$cache",
+			"dirsCache",
+			"cache",
+			"URL}",
+			"$DIRECTORY_SEPARATOR",
+			"tmbDir}",
+			"tmbDir",
+			".tmb",
+			".DSStore",
+			"fm",
+			"tmb",
+			"291",
+			"phash",
+			"rindex",
+			"_phash",
+			"shift @",
+			"shift",
+			"stat",
+			"Root folder does not exists",
+			"loaded",
+			"ERROR_CONF_NO_VOL",
+			"errNoVolumes",
+			"Root folder does not exists",
+			"path",
+			"root",
+			"roots",
+			"$opts",
+			"open",
+			"files",
+			"ui",
+			"DHTMLSuite_paneContentwest",
+			"enter}",
+			"enter",
+			"list_container",
+			"showcontent",
+			"_dirname",
+			"phash",
+			"_phash",
+			"phash",
+			"hash",
+			"phash",
+			";\n",
+			"hash",
+			"img",
+			"icon",
+			"window",
+			"img",
+			"file",
+			"tmb",
+			"quicklook",
+			"funcNum",
+			"jquery",
+			"dialogelfinder",
+			"admin"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1358,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1062,
+								1062
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								584,
+								584
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/database.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								395
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"project": "ifrogcrm.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"ifro",
+				"~/www/ifrogcrm_old.rails/ifrogcrm_old.sublime-project"
+			],
+			[
+				"ifrog",
+				"~/www/rails/ifrogcrm/ifrogcrm.sublime-project"
+			],
+			[
+				"ifo",
+				"~/www/ifrogcrm.rails/ifrogcrm-rails.sublime-workspace"
+			],
+			[
+				"iforo",
+				"~/www/ifrogcrm.rails/ifrogcrm-rails.sublime-workspace"
+			],
+			[
+				"rails",
+				"~/www/ifrogcrm.rails/ifrogcrm-rails.sublime-project"
+			],
+			[
+				"btn",
+				"~/www/btnew.dev/btnew.sublime-project"
+			],
+			[
+				"tb",
+				"~/www/thermo.dev/thermo.sublime-project"
+			],
+			[
+				"bt",
+				"~/www/btnew.dev/btnew.sublime-project"
+			],
+			[
+				"crm",
+				"~/www/gg.dev/cgi-bin/lib/GG/Admin/crm-rails.sublime-workspace"
+			],
+			[
+				"ru",
+				"~/www/gg.dev/cgi-bin/lib/GG/Admin/crm-rails.sublime-workspace"
+			],
+			[
+				"vagr",
+				"~/vagrant/vagrant.sublime-project"
+			],
+			[
+				"ggte",
+				"~/www/ggtest.dev/ggtest.sublime-project"
+			],
+			[
+				"gg",
+				"~/www/ggtest.dev/ggtest.sublime-project"
+			],
+			[
+				"ggtest",
+				"~/www/ggtest.dev/ggtest.sublime-project"
+			],
+			[
+				"va",
+				"~/vagrant/vagrant.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 522.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,66 @@
+<h1><%== params[:id] ? "Редактирование карточки домена «" + @crm_domain.name + "»" : "Добавление нового домена" %></h1>
+<div class="rightCol">
+	<% if params[:id] %>
+		<%= link_to 'Удалить', crm_domain_path(@crm_domain), :confirm => "Вы уверены что хотите удалить домен?", :method => :delete, :class => 'rightBut', :id => 'right-delete' %>
+	<% end %>
+
+	<%= link_to 'Сохранить и продолжить', '', :class => 'rightBut', :id => 'save-and-continue' %>
+	<%= link_to 'Сохранить и закрыть', '', :class => 'rightBut', :id => 'save-and-exit' %>
+
+	<br/>
+	<a href="<%= crm_domains_path %>" class="rightBut" id="right-delete">К списку доменов</a>
+
+</div>
+<div class="leftCol">
+	<ul class="tabs-menu">
+		<li style="z-index:10;" class="current"><a href="#" style="background-image: url(/crm/img/icon_calend.png);">Карточка домена</a><ins></ins></li>
+	</ul>
+	<div class="anketa-block">
+
+		<%= render 'Crm/msg_item_error', item: @crm_domain %>
+
+		<%= render 'crm/msg' %>
+
+		<%= simple_form_for([@crm_domain]) do |f| %>
+			<input type="hidden" name="continue" value="0" />
+			<table class="anketa float-table-3col">
+				<tr>
+					<td>
+						<label>
+							<%= f.input :name, label: 'Домен'%>
+						</label>
+					</td>
+					<td>
+						<label>
+                            <%= f.input :regdate, label: 'Дата регистрации'%>
+						</label>
+					</td>
+					<td>
+						<label>
+                          <%= f.input :paiddate, label: 'Оплачен до'%>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<%= f.input :comment, label: 'Комментарий' %>
+					</td>
+				</tr>
+			</table>
+		<% end %>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$("#save-and-continue").click(function(){
+		$("input[name=continue]").val(1);
+		$(".anketa-block form").submit();
+		return false;
+	})
+	$("#save-and-exit").click(function(){
+		$("input[name=continue]").val(0);
+		$(".anketa-block form").submit();
+		return false;
+	})
+</script>

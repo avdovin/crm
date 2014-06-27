@@ -1,0 +1,10 @@
+<% if flash[:msg_success] %>
+  <span id="container-message" class="message-success message" style="padding:20px;"><%= flash[:msg_success] %></span>
+
+<% elsif flash[:notice] %>
+  <span id="container-message" class="message-success message" style="padding:20px;"><%= flash[:notice] %></span>
+
+<% elsif flash[:msg_error] %>
+  <span id="container-message" class="message-errors message" style="padding:20px;"><%= flash[:msg_error] %></span>
+
+<% end %>

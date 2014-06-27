@@ -1,0 +1,23 @@
+<h1>Listing crm_domains</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @crm_domains.each do |crm_domain| %>
+      <tr>
+        <td><%= link_to 'Show', crm_domain %></td>
+        <td><%= link_to 'Edit', edit_crm_domain_path(crm_domain) %></td>
+        <td><%= link_to 'Destroy', crm_domain, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Domain', new_crm_domain_path %>

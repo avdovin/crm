@@ -1,0 +1,2 @@
+module Crm::DomainsHelper
+end

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails ifrogcrm: development" uuid="85340cb1-af22-410f-a339-9799b4a28e75">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails ifrogcrm: test" uuid="26d12e53-34d5-41e4-ba6d-cb378ad70eb4">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails ifrogcrm: production" uuid="7eacaff0-ef3f-4c96-b04a-969d081faec3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

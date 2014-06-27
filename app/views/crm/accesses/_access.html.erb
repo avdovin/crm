@@ -1,0 +1,7 @@
+<tr onClick="javascript:document.location.href='<%= edit_crm_access_path(access) %>'" class="yellow items" data-item-id="<%= access.id %>">
+	<td><input type="checkbox" class="chb_selectItem" value="<%= access.id %>"/></td>
+	<td><%= access.domain.collect { |d| d.name }.join( ', ' ) %></td>
+	<td><%= access.text.truncate(100, separator: ' ') %></td>
+	<td><%= access.comment.truncate(100, separator: ' ') %></td>
+    <td><a class="action" href="<%= edit_crm_access_path(domain) %>" title="Смотреть"><img src="/crm/img/edit.png" width="16" height="16" alt=""></a></td>
+</tr>

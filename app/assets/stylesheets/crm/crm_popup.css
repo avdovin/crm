@@ -1,0 +1,78 @@
+#popup-wrapper .anketa {
+    width: 100%;
+    margin: 0 0 0;
+}
+    #popup-wrapper .anketa td {
+        /*width: 33%;*/
+        font-size: 12px;
+        vertical-align: top;
+    }
+        #popup-wrapper .anketa td.sep {
+            width: 44px !important;
+            padding: 0 !important;
+            font-size: 1px !important;
+            background: url(/crm/img/sep.gif) 50% 0 repeat-y;
+        }
+        /*.anketa td.c3 input.text {
+            margin: 11px 0 0;
+        }*/
+        #popup-wrapper .anketa td span {
+            display: block;
+            margin: 0 0 4px;
+            font-size: 12px;
+            text-shadow: 1px 1px 0 #fff;
+        }
+        #popup-wrapper .anketa td input.text {
+            /*width: 185px;*/
+            width: 100%;
+            margin: 0 0 8px;
+            padding: 2px 0;
+            font-size: 14px;
+            color: #555;
+            border: 1px solid #828282;
+            border-radius: 5px;
+            box-shadow: inset 1px 1px 0 #ddd;
+            text-indent: 2px;
+        }
+            #popup-wrapper .anketa td input.text:focus {
+                color: #000;
+                border-color: #000;
+            }
+        #popup-wrapper .anketa td select {
+            /*width: 185px;*/
+            width: 100%;
+            margin: 0 0 8px;
+            padding: 1px 1px 1px 0;
+            font-size: 14px;
+            color: #000;
+            border: 1px solid #828282;
+            border-radius: 5px;
+            /*box-shadow: 1px 1px 1px #ddd;*/
+            text-indent: 2px;
+        }
+        #popup-wrapper .anketa td textarea {
+            width: 100%;
+            height: 60px;
+            margin: 0 0 5px;
+            font-family: Arial, sans-serif;
+            color: #555;
+            border: 1px solid #828282;
+            border-radius: 5px;
+            box-shadow: inset 1px 1px 0 #ddd;
+            text-indent: 2px;
+            resize: none;
+        }
+            #popup-wrapper .anketa td textarea:focus {
+                color: #000;
+                border-color: #000;
+            }
+            #popup-wrapper .anketa td.c3 {
+            }
+                #popup-wrapper .anketa td.c3 input[type=checkbox] {
+                    position: relative;
+                    top: 1px;
+                    margin: 1px 2px 1px 0;
+                }
+                #popup-wrapper .anketa td.c3 span {
+                    margin-top: 10px;
+                }

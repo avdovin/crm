@@ -1,0 +1,17 @@
+<%= form_for(@crm_task) do |f| %>
+  <% if @crm_task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@crm_task.errors.count, "error") %> prohibited this crm_task from being saved:</h2>
+
+      <ul>
+      <% @crm_task.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

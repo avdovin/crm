@@ -1,0 +1,79 @@
+<div id="container">
+  <h1>
+    Доступы
+  </h1>
+
+  <div id="search">
+    <input type="text" name="qsearch" id="qsearch" placeholder="Что ищем?"/> <label><input name="qsearch_nofilter" value="1" type="checkbox"/> Не учитывать фильтры</label>
+  </div>
+
+  <div id="list-container">
+    <table id="list">
+      <col width="10" />
+      <col width="auto" />
+      <col width="150" />
+      <col width="150" />
+      <thead>
+      <tr>
+        <th><input type="checkbox" id="chb_toogleAllChecked"/></th>
+        <th>
+          <div data-order="name">
+            <a class="az" href="#"></a>
+            <a class="za" href="#"></a>
+            <a class="sort" href="#">Домены</a>
+          </div>
+        </th>
+        <th>
+          <div data-order="tasktype">
+            <a class="az" href="#"></a>
+            <a class="za" href="#"></a>
+            <a class="sort" href="#">Доступы</a>
+          </div>
+        </th>
+        <th>
+          <div data-order="taskstatus">
+            <a class="az" href="#"></a>
+            <a class="za" href="#"></a>
+            <a class="sort" href="#">Комментарий</a>
+          </div>
+        </th>
+        <th>
+        </th>
+      </tr>
+       </thead>
+      <tbody id="list-items"></tbody>
+    </table>
+  </div>
+</div>
+
+<script type="text/javascript">
+    CONTROLLER = '<%= controller_name %>';
+
+    function filter(add_filter){
+        var filter = {};
+        filter['container_items'] = 'list-items';
+
+        if(order){
+            filter['order']	= order;
+            filter['order_type'] = order_type;
+        }
+        filter['id_handler'] =  $("input[name=filter_input_id_handler]:checked").length? $("input[name=filter_input_id_handler]:checked").val() : 0;
+
+        filter['qsearch_nofilter'] = $("input[name=qsearch_nofilter]:checked").length ? 1 : 0;
+        filter['limit'] = parseInt( $("#pagination a.current").data('limit') );
+
+        return jQuery.extend(filter, add_filter);
+    }
+
+
+
+    $(document).ready(function(){
+        items_list( filter() );
+
+        // checkbox entity click
+        $("#list").on("click", "tr td input", function(e){
+
+            e.stopPropagation();
+        });
+    });
+</script>

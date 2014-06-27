@@ -1,0 +1,17 @@
+<%= form_for(@crm_domain) do |f| %>
+  <% if @crm_domain.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@crm_domain.errors.count, "error") %> prohibited this crm_domain from being saved:</h2>
+
+      <ul>
+      <% @crm_domain.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

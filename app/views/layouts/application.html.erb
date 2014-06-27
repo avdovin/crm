@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iFrogCRM</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="robots" content="index, follow">
+
+  <%= stylesheet_link_tag "crm", media: "all" %>
+
+  <%= javascript_include_tag "jquery" %>
+  <%= javascript_include_tag "crm" %>
+
+  <%# javascript_include_tag "/crm/js/jsCal/js/jscal2", "/crm/js/jsCal/js/lang/ru" %>
+
+  <%= csrf_meta_tags %>
+</head>
+<% if params[:id] || action_name == 'new' %>
+    <body>
+<% else %>
+    <body class="nobg">
+<% end %>
+
+<div class="float" id="popup-wrapper" style="display:none;" ></div>
+<div id="blackbox" style="display:none;"></div>
+
+<div id="top">
+  <div id="body">
+    <%= render 'crm/top' %>
+
+    <div id="container">
+      <%= yield %>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
