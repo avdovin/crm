@@ -1,7 +1,7 @@
 <h1><%== params[:id] ? "Редактирование карточки доступа" : "Добавление новых доступов" %></h1>
 <div class="rightCol">
 	<% if params[:id] %>
-		<%= link_to 'Удалить', crm_access_path(@access), :confirm => "Вы уверены что хотите удалить домен?", :method => :delete, :class => 'rightBut', :id => 'right-delete' %>
+		<%= link_to 'Удалить', crm_access_path(@crm_access), :confirm => "Вы уверены что хотите удалить домен?", :method => :delete, :class => 'rightBut', :id => 'right-delete' %>
 	<% end %>
 
 	<%= link_to 'Сохранить и продолжить', '', :class => 'rightBut', :id => 'save-and-continue' %>
@@ -17,19 +17,11 @@
 	</ul>
 	<div class="anketa-block">
 
-		<% if @access.errors.any? %>
-			<div class="message message-errors">
-				<ul>
-					<% @access.errors.full_messages.each do |msg| %>
-						<li><%= msg %></li>
-					<% end %>
-				</ul>
-			</div>
-		<% end %>
+		<%= render "Crm/msg_item_error", object: @crm_access %>
 
-	 <%= render 'crm/msg' %>
+		<%= render 'crm/msg' %>
 
-		<%= simple_form_for([@access]) do |f| %>
+		<%= simple_form_for([@crm_access]) do |f| %>
 			<input type="hidden" name="continue" value="0" />
 			<table class="anketa float-table-3col">
 				<tr>
@@ -44,7 +36,7 @@
 				</tr>
 				<tr>
 					<td>
-						<%= f.association :domain, collection: Crm::Domain.all(order: 'name'), input_html: { style: 'width:96%;height:200px;'} %>
+						<%= f.association :crm_domain, collection: Crm::Domain.all(order: 'name'), input_html: { style: 'width:96%;height:200px;'} %>
 					</td>
 				</tr>
 			</table>

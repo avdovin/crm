@@ -1,0 +1,22 @@
+<table id="auth-login">
+  <tr>
+      <td>
+          <% if notice %>
+            <p class="alert alert-success"><%= notice %></p>
+          <% end %>
+          <% if alert %>
+            <p class="alert alert-danger"><%= alert %></p>
+          <% end %>
+          <%= simple_form_for(:crmuser, :url => session_path(:crmuser)) do |f| %>
+              <div class="clearfix">
+                  <%= f.input :email, required: false, autofocus: true %>
+                  <%= f.input :password, required: false %>
+              </div>
+              <%# f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+              <div id="auth-login-errors">
+              </div>
+              <%= f.button :submit, "Войти" %>
+          <% end %>
+      </td>
+  </tr>
+</table>

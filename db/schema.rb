@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140622151722) do
+ActiveRecord::Schema.define(version: 20140627154914) do
 
   create_table "crm_accesses", force: true do |t|
     t.text     "text"
@@ -30,22 +30,23 @@ ActiveRecord::Schema.define(version: 20140622151722) do
     t.datetime "updated_at"
   end
 
-  create_table "crm_tasks", force: true do |t|
-    t.string   "name"
-    t.integer  "priority"
-    t.integer  "domain_id"
-    t.datetime "start_date"
-    t.datetime "end_date"
-    t.integer  "id_handler"
-    t.integer  "tasktype"
-    t.integer  "branch_id"
-    t.integer  "tasktime"
-    t.integer  "elapsed_time"
-    t.boolean  "is_allday"
-    t.boolean  "is_notify"
-    t.text     "comment"
+  create_table "crmusers", force: true do |t|
+    t.string   "name",                   default: "", null: false
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "crmusers", ["email"], name: "index_crmusers_on_email", unique: true, using: :btree
+  add_index "crmusers", ["reset_password_token"], name: "index_crmusers_on_reset_password_token", unique: true, using: :btree
 
 end

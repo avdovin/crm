@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <title>Welcome</title>
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="robots" content="index, follow">
+
+  <%= stylesheet_link_tag "crm", media: "all" %>
+  <%= javascript_include_tag "jquery" %>
+
+</head>
+<body>
+<script>
+    $(document).ready(function(){
+        $("#auth-login form").submit(function() {
+            var email = $("#auth-login input[name=email]");
+            var password = $("#auth-login input[name=password]");
+
+            if (!email.val() || !validateEmail(email.val())) email.closest("label").addClass("error").focus();
+            if (!password.val()) password.closest("label").addClass("error").focus();
+
+            if ($('#auth-login label.error').length > 0) {
+                $("#auth-login-errors").fadeIn();
+                return false;
+            } else {
+                //document.authlogin.submit();
+                $("#auth-login-errors").fadeOut();
+            }
+        });
+        $("#auth-login form input").bind('input', function(){
+            if ($(this).val().length > 2) {
+                $(this).closest("label").removeClass("error");
+            }
+        });
+    });
+
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+</script>
+
+  <%= yield %>
+
+
+</body>
+</html>

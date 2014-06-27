@@ -19,18 +19,17 @@
   <ul id="topbar-menu">
     <li class="noempty"><a href="javascript:void(0);" style="background-image: url(/crm/img/add1.png)"><ins></ins><span>Добавить</span></a>
       <ul class="add-links">
-        <li><a data-popup="popup_edit_task" href="<%= new_crm_task_path %>" <%== controller_name == 'tasks' ? "class='current'" : "" %> id="add-new-task">Задача</a></li>
         <li><a href="<%= new_crm_domain_path %>" <%== controller_name == 'domains' ? "class='current'" : "" %> id="add-new-domain">Домен</a></li>
         <li><a href="<%= new_crm_access_path %>" <%== controller_name == 'accesses' ? "class='current'" : "" %> id="add-new-access">Доступы</a></li>
       </ul>
     </li>
-    <li><a class="<%= controller_name == 'tasks' ? 'current' : '' %>" href="<%= crm_tasks_path %>" style="background-image: url(/crm/img/list.png)">Задачи</a></li>
     <li><a class="<%= controller_name == 'domains' ? 'current' : '' %>" href="<%= crm_domains_path %>" style="background-image: url(/crm/img/list.png)">Домены</a></li>
     <li><a class="<%= controller_name == 'accesses' ? 'current' : '' %>" href="<%= crm_accesses_path %>" style="background-image: url(/crm/img/list.png)">Доступы</a></li>
 
 
   </ul>
   <div id="auth-logged">
-    Здравствуйте, <a href="" id="auth-logged-username">Test</a> <a href="" id="auth-logged-logout"></a>
+    Здравствуйте, <a href="" id="auth-logged-username"><%= current_crmuser.name %></a>
+    <%= link_to 'Выйти', destroy_crmuser_session_path, :method => :delete %>
   </div>
 </div>

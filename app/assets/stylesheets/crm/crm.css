@@ -158,7 +158,7 @@ a:hover {
     width: 100%;
     height: 100%;
     min-height: 400px;
-    background: url(../img/htmlbg.jpg) 50% 50%;
+    background: url(../crm/img/htmlbg.jpg) 50% 50%;
 }
     #auth-login td {
         vertical-align: middle;
@@ -187,7 +187,7 @@ a:hover {
                 line-height: 110px;
                 text-indent: 10px;
                 color: #204d0e;
-                background: url(../img/freddy.png) right 50% no-repeat;
+                background: url(../crm/img/freddy.png) right 50% no-repeat;
             }
             #auth-login label {
                 width: 48%;
@@ -226,7 +226,7 @@ a:hover {
                 top: 78px;
                 padding: 3px 10px 3px 30px;
                 font-size: 15px;
-                background: #eee url(../img/save.png) 10px 50% no-repeat;
+                background: #eee url(../crm/img/save.png) 10px 50% no-repeat;
                 border: 1px solid #aaa;
                 border-radius: 5px;
                 cursor: pointer;
@@ -412,7 +412,7 @@ a:hover {
         color: #000;
         text-shadow: 1px 1px 0 #fff;
         text-decoration: none;
-        background: url(../img/icon_msg.gif) 5px 50% no-repeat;
+        background: url(../crm/img/icon_msg.gif) 5px 50% no-repeat;
         border-radius: 3px;
     }
         #topbar-messages:hover {
@@ -427,7 +427,7 @@ a:hover {
         color: #000;
         text-shadow: 1px 1px 0 #fff;
         text-decoration: none;
-        background: url(../img/convertr.png) 5px 50% no-repeat;
+        background: url(../crm/img/convertr.png) 5px 50% no-repeat;
         border-radius: 3px;
     }
         #topbar-conveter:hover, #topbar-converter.current {
@@ -437,7 +437,7 @@ a:hover {
 #submenu {
     position: relative;
     height: 46px;
-    background: url(../img/submenu_bg.gif) 0 0 repeat-x;
+    background: url(../crm/img/submenu_bg.gif) 0 0 repeat-x;
 }
     #submenu ul {
         list-style: none;
@@ -459,7 +459,7 @@ a:hover {
                 text-decoration: none;
             }
                 #submenu ul li a:hover, #submenu ul li a.current {
-                    background: url(../img/submenu_hover.gif) 0 0 no-repeat;
+                    background: url(../crm/img/submenu_hover.gif) 0 0 no-repeat;
                 }
                     #submenu ul li a:hover:after, #submenu ul li a.current:after {
                         content: '';
@@ -467,7 +467,7 @@ a:hover {
                         right: 0;
                         width: 12px;
                         height: 100%;
-                        background: url(../img/submenu_hover.gif) right 0 no-repeat;
+                        background: url(../crm/img/submenu_hover.gif) right 0 no-repeat;
                     }
                 #submenu ul li a ins {
                     float: left;
@@ -556,7 +556,7 @@ a:hover {
             top: 1px;
             padding: 3px 10px 3px 30px;
             font-size: 15px;
-            background: #eee url(../img/save.png) 10px 50% no-repeat;
+            background: #eee url(../crm/img/save.png) 10px 50% no-repeat;
             border: 1px solid #aaa;
             border-radius: 5px;
             cursor: pointer;
@@ -635,12 +635,12 @@ a:hover {
                             background: #c7ced4;
                         }
                     #list tr.isplus td:first-child {
-                        background-image: url(../img/icon_plus.png);
+                        background-image: url(../crm/img/icon_plus.png);
                         background-position: 50% 50%;
                         background-repeat: no-repeat;
                     }
                     #list tr.isminus td:first-child {
-                        background-image: url(../img/icon_minus.png);
+                        background-image: url(../crm/img/icon_minus.png);
                         background-position: 50% 50%;
                         background-repeat: no-repeat;
                     }
@@ -710,7 +710,7 @@ a:hover {
     #listings {
         /*width: 947px;*/
         margin: -19px auto 0;
-        background: url(../img/listings_bg.jpg) 0 0 repeat-y;
+        background: url(../crm/img/listings_bg.jpg) 0 0 repeat-y;
         border-bottom: 1px solid #888;
         border-left: 1px solid #888;
         border-right: 1px solid #888;
@@ -732,7 +732,7 @@ a:hover {
                         padding: 2px 0 2px 30px;
                         color: #222;
                         text-decoration: none;
-                        background: url(../img/listings_icon.png) 10px 50% no-repeat;
+                        background: url(../crm/img/listings_icon.png) 10px 50% no-repeat;
 
                         -webkit-transition: all 0.2s ease-in;
                         -moz-transition: all 0.2s ease-in;
@@ -779,7 +779,7 @@ a:hover {
                     display: block;
                     width: 21px;
                     height: 18px;
-                    background: url(../img/listings_search.gif);
+                    background: url(../crm/img/listings_search.gif);
                 }
                 #listings-controls a.add {
                     position: absolute;
@@ -792,7 +792,7 @@ a:hover {
                     font-size: 14px;
                     color: #555;
                     line-height: 29px;
-                    background: url(../img/listings_add.png) 10px 50% no-repeat;
+                    background: url(../crm/img/listings_add.png) 10px 50% no-repeat;
                     text-decoration: none;
                     border-left: 1px solid #999;
                 }
@@ -811,7 +811,7 @@ a:hover {
                         padding: 0;
                         text-align: center;
                         vertical-align: middle;
-                        background: url(../img/listings_titlebg.png);
+                        background: url(../crm/img/listings_titlebg.png);
                         border-top: 0;
                     }
                         #listings-right table tr.header td a {
@@ -835,10 +835,10 @@ a:hover {
                             background-color: #c4d9ed;
                         }
                             #listings-right table tr.header td.sort a.asc {
-                                background: url(../img/listings_sort_asc.png) right 50% no-repeat;
+                                background: url(../crm/img/listings_sort_asc.png) right 50% no-repeat;
                             }
                             #listings-right table tr.header td.sort a.desc {
-                                background: url(../img/listings_sort_desc.png) right 50% no-repeat;
+                                background: url(../crm/img/listings_sort_desc.png) right 50% no-repeat;
                             }
                 #listings-right table td {
                     vertical-align: top;
@@ -861,17 +861,17 @@ a:hover {
                         border-right: 0;
                     }
                     #listings-right table td.del {
-                        background: url(../img/listings_del.png) 50% 50% no-repeat !important;
+                        background: url(../crm/img/listings_del.png) 50% 50% no-repeat !important;
                         cursor: hand;
                         cursor: pointer;
                     }
                     #listings-right table td.add {
-                        background: url(../img/listings_add.png) 50% 50% no-repeat !important;
+                        background: url(../crm/img/listings_add.png) 50% 50% no-repeat !important;
                         cursor: hand;
                         cursor: pointer;
                     }
                     #listings-right table td.ok {
-                        background: url(../img/listings_ok.png) 50% 50% no-repeat !important;
+                        background: url(../crm/img/listings_ok.png) 50% 50% no-repeat !important;
                         cursor: hand;
                         cursor: pointer;
                     }
@@ -911,7 +911,7 @@ a:hover {
             line-height: 22px;
             text-indent: 35px;
             text-decoration: none;
-            background: url(../img/button_adduser.gif);
+            background: url(../crm/img/button_adduser.gif);
             opacity: 0.8;
         }
             #add-new-user:hover {
@@ -938,7 +938,7 @@ a:hover {
         display: block;
         width: 17px;
         height: 17px;
-        background: url(../img/chat_close.png);
+        background: url(../crm/img/chat_close.png);
     }
         #converter-close:hover {
             background-position: 0 -17px;
@@ -1044,7 +1044,7 @@ a:hover {
         .filter span {
             padding: 0 15px 0 0;
             color: #006D9C;
-            background: url(../img/arrow_down.png) right 3px no-repeat;
+            background: url(../crm/img/arrow_down.png) right 3px no-repeat;
             cursor: pointer;
         }
             .filter.empty span {
@@ -1055,7 +1055,7 @@ a:hover {
                 text-decoration: underline;
             }
             .filter.opened span {
-                background-image: url(../img/arrow_up.png);
+                background-image: url(../crm/img/arrow_up.png);
             }
         .filter div {
             z-index: 1000;
@@ -1173,7 +1173,7 @@ a:hover {
             .float-container h1[contenteditable=true] {
                 margin: -3px -5px;
                 padding: 3px 30px 3px 5px;
-                background: url(../img/pencil.png) right 50% no-repeat;
+                background: url(../crm/img/pencil.png) right 50% no-repeat;
                 cursor: text;
             }
             .float-container h1[contenteditable=true]:focus {
@@ -1191,7 +1191,7 @@ a:hover {
                 font-size: 14px;
                 font-weight: bold;
                 color: #333;
-                background: url(../img/pencil_sm.png) right 50% no-repeat;
+                background: url(../crm/img/pencil_sm.png) right 50% no-repeat;
                 cursor: text;
             }
                 .float-container span[contenteditable=true]:focus {
@@ -1608,7 +1608,7 @@ a:hover {
             width: 12px;
             height: 13px;
             margin: 3px 0 0;
-            background: url(../img/pagenav_prev.png);
+            background: url(../crm/img/pagenav_prev.png);
          }
         #pageNav.v2 td.c3 a {
             display: -moz-inline-stack;
@@ -1618,5 +1618,5 @@ a:hover {
             width: 12px;
             height: 13px;
             margin: 3px 0 0;
-            background: url(../img/pagenav_next.png);
+            background: url(../crm/img/pagenav_next.png);
         }

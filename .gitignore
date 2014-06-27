@@ -14,3 +14,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+ifrogcrm.sublime-project
+ifrogcrm_w.sublime-workspace
