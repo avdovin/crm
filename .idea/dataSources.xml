@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails ifrogcrm: development" uuid="85340cb1-af22-410f-a339-9799b4a28e75">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/ifrogcrm_development</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/ifrogcrm_development</jdbc-url>
       <user-name>root</user-name>
       <user-password>dfd8dfc5dfc5dfde</user-password>
       <libraries />

@@ -1,5 +1,6 @@
 <div id="search">
-	<%= form_tag crm_domains_path, :method => 'get', :id => "item_search" do %>
+	<div class="loading"></div>
+	<%= form_tag form_action, :method => 'get', :id => "item_search" do %>
 		<%= text_field_tag "qsearch", params[:qsearch], placeholder: "Что ищем?" %>
 		<label><%= check_box_tag 'qsearch_nofilter', 1 %>Не учитывать фильтры</label>
 	<% end %>

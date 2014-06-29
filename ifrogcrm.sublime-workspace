@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"back",
+				"background-image"
+			],
+			[
+				"contai",
+				"container"
+			],
+			[
 				"erro",
 				"error_log"
 			]
@@ -12,41 +20,58 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
+			"file": "app/assets/javascripts/crm/crm.js",
 			"settings":
 			{
-				"buffer_size": 1358,
+				"buffer_size": 5345,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/crm/_search_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 294,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/routes.rb",
+			"file": "app/assets/stylesheets/crm/crm_misc.css",
 			"settings":
 			{
-				"buffer_size": 1601,
+				"buffer_size": 440,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "# SQLite version 3.x\n#   gem install sqlite3\n#\n#   Ensure the SQLite 3 gem is defined in your Gemfile\n#   gem 'sqlite3'\n#\ndefault: &default\n  adapter: mysql2\n  pool: 5\n  timeout: 5000\n\ndevelopment:\n  <<: *default\n  database: db/development.sqlite3\n\n# Warning: The database defined as \"test\" will be erased and\n# re-generated from your development database when you run \"rake\".\n# Do not set this db to the same as development or production.\ntest:\n  <<: *default\n  database: db/test.sqlite3\n\nproduction:\n  <<: *default\n  database: db/production.sqlite3\n",
-			"file": "config/database.yml",
-			"file_size": 552,
-			"file_write_time": 130478164130000000,
+			"file": "app/views/crm/users/_form.html.erb",
 			"settings":
 			{
-				"buffer_size": 551,
+				"buffer_size": 1593,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/crm/crm.css",
+			"settings":
+			{
+				"buffer_size": 48911,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 313.0,
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 0.0
+		"width": 516.0
 	},
 	"console":
 	{
@@ -66,6 +91,77 @@
 	},
 	"file_history":
 	[
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/users/index.js.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/test/controllers/crm/users_controller_test.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/test/test_helper.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/environment.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/database.yml",
+		"/Users/aleksey/www/rails/ifrogcrm/test/fixtures/crm/users.yml",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/layouts/application.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/_top.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/users/new.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/models/crm/user.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/controllers/crm/users_controller.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/helpers/application_helper.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/users/_form.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/users/edit.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/users/index.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/_pagination.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/_search_form.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/assets/javascripts/crm/crm.js",
+		"/Users/aleksey/www/rails/ifrogcrm/app/assets/stylesheets/crm/crm_misc.css",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/_msg_item_error.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/Gemfile",
+		"/Users/aleksey/www/rails/ifrogcrm/app/controllers/application_controller.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/controllers/sessions_controller.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/layouts/auth.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/assets/javascripts/crm.js",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/_msg.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/assets/javascripts/crm/crm_edit.js",
+		"/Users/aleksey/www/rails/ifrogcrm/app/assets/stylesheets/crm/crm.css",
+		"/Users/aleksey/www/rails/ifrogcrm/app/assets/stylesheets/crm.css",
+		"/Users/aleksey/www/rails/ifrogcrm/app/assets/stylesheets/crm/users.css",
+		"/Users/aleksey/www/rails/ifrogcrm/app/controllers/crm/domains_controller.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/domains/index.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/users/_user.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/domains/_form.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/domains/_domain.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/users/{",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/domains/index.js.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/domains/new.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/routes.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/db/seeds.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/helpers/sessions_helper.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/devise/sessions/new.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/secrets.yml",
+		"/Users/aleksey/www/rails/ifrogcrm/.gitignore",
+		"/Users/aleksey/www/rails/ifrogcrm/config/environments/production.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/initializers/assets.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/boot.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/application.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/environments/development.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/db/migrate/20140621093928_create_crm_domains.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/controllers/crm/accesses_controller.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/db/migrate/20140622151722_create_crm_accesses.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/views/crm/domains/edit.html.erb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/models/crm/domain.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/app/models/crm/access.rb",
+		"/Users/aleksey/www/ifrogcrm_old.rails/app/controllers/crm/accesses_controller.rb",
+		"/Users/aleksey/www/ifrogcrm_old.rails/app/models/crm/domain.rb",
+		"/Users/aleksey/www/ifrogcrm_old.rails/app/models/crm/access.rb",
+		"/Users/aleksey/www/ifrogcrm_old.rails/Gemfile",
+		"/Users/aleksey/www/rails/ifrogcrm/db/migrate/20140621122836_create_crm_tasks.rb",
+		"/Users/aleksey/www/ifrogcrm_old.rails/db/migrate/20130901111252_create_crm_accesses.rb",
+		"/Users/aleksey/www/ifrogcrm_old.rails/app/views/layouts/application.html.erb",
+		"/Users/aleksey/www/ifrogcrm_old.rails/db/migrate/20140309093716_create_crm_tasks.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/Gemfile.lock",
+		"/Users/aleksey/www/rails/ifrogcrm/config/initializers/session_store.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/initializers/backtrace_silencers.rb",
+		"/Users/aleksey/www/ifrogcrm_old.rails/config/routes.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/environments/test.rb",
+		"/Users/aleksey/www/rails/ifrogcrm/config/initializers/cookies_serializer.rb",
+		"/Users/aleksey/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/aleksey/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Plugins/TableList.pm",
 		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/UtilHelpers.pm",
 		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Texts.pm",
@@ -122,73 +218,7 @@
 		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG.pm",
 		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Content.pm",
 		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Menu.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Seo.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/File.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_input.html.ep",
-		"/Users/aleksey/Downloads/dhtml-suite-for-applications/js/dhtml-suite-for-applications-without-comments.js",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_list.html.ep",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_checkbox.html.ep",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/urlify.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/mselectboxes.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/image-crop.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/edit_area-dop.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/copy_contacts.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/arrange.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/image-slideshow.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/js/form-send.min.js",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/AnketForm/field_input_filter.html.ep",
-		"/Users/aleksey/Downloads/Mojolicious-Plugin-Cache-0.0015/lib/Mojolicious/Plugin/Cache/Page.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Sessions.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojo/Util.pm",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/elFinderConnector.class.php",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/elFinderVolumeDriver.class.php",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Filemanager.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Admin/Filemanager/elFinder.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Captcha.pm",
-		"/Users/aleksey/Downloads/Mojolicious-Plugin-Cache-0.0015/lib/Mojolicious/Plugin/Cache/Action.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Admin.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/Mojo.pm",
-		"/Users/aleksey/www/gg.dev/.gitignore",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/js/elFinder.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/js/commands/quicklook.js",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Mail.pm",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/elFinder.class.php",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/elFinderVolumeLocalFileSystem.class.php",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/elfinder.html",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/elfinder.php",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/connector.php",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/php/connector.minimal.php",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla",
-		"/Users/aleksey/www/gg.dev/cgi-bin/extlib/DBIx/Simple/Result/RowObject.pm",
-		"/Users/aleksey/www/gg.dev/README.md",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/Main/user_block.html.ep",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/TableList/tablelist_container.html.ep",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/Plugins/File/zipimport_img_node.html.ep",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/page_start.html.ep",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/themes/gg/css/pane-splitter.css",
-		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Content/Catalog.pm",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/Filemanager/elfinder.html.ep",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/.gitignore",
-		"/Users/aleksey/www/gg.dev/cgi-bin/templates/Admin/Filemanager/elfinder_popup.html.ep",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/filemanager/elfinder.src.html",
-		"/Users/aleksey/www/gg.dev/httpdocs/admin/ckeditor/config.js",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Admin/Styles.pm",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Admin/AdminController.pm",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Admin/Filemanager.pm",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/templates/Admin/Filemanager/elfinder.html.ep",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/templates/Admin/Filemanager/elfinder_popup.html.ep",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Admin/Plugins/InitJson.pm",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/config",
-		"/Users/aleksey/www/gg.dev/.project",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG/Plugins/UtilHelpers.pm",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/script/dispatch.fcgi",
-		"/Users/aleksey/www/gg.dev/httpdocs/cgi-bin/lib/GG.pm",
-		"/Users/aleksey/www/ggtest.dev/ggtest.sublime-project",
-		"/Users/aleksey/www/ggtest.dev/cgi-bin/templates/Admin/page_admin_main.html.ep",
-		"/Users/aleksey/www/ggtest.dev/cgi-bin/templates/Admin/quick_auth_reload.html.ep",
-		"/Users/aleksey/www/ggtest.dev/cgi-bin/templates/Admin/form_auth.html.ep",
-		"/Users/aleksey/www/ggtest.dev/cgi-bin/extlib/Mojolicious/Validator.pm",
-		"/Users/aleksey/www/ggtest.dev/httpdocs/admin/js/codemirror/demo/variableheight.html"
+		"/Users/aleksey/www/gg.dev/cgi-bin/lib/GG/Plugins/Seo.pm"
 	],
 	"find":
 	{
@@ -206,6 +236,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#qsearch",
+			"should_get_new",
+			"test_should_show_crm_user",
+			"title_arr",
+			"set_title",
+			"set_title\\",
+			"page",
+			"set_crm_user",
+			"index",
+			"form_action",
+			"crm_domains",
+			"dfsaff",
+			"chat",
+			"devi",
 			"razdel",
 			"def_fil",
 			"init_save_filter",
@@ -319,21 +363,7 @@
 			"phash",
 			"_phash",
 			"phash",
-			"hash",
-			"phash",
-			";\n",
-			"hash",
-			"img",
-			"icon",
-			"window",
-			"img",
-			"file",
-			"tmb",
-			"quicklook",
-			"funcNum",
-			"jquery",
-			"dialogelfinder",
-			"admin"
+			"hash"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -351,24 +381,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "app/assets/javascripts/crm/crm.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1358,
+						"buffer_size": 5345,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1062,
-								1062
+								1449,
+								1449
 							]
 						],
 						"settings":
@@ -376,30 +406,31 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 708.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "config/routes.rb",
+					"file": "app/views/crm/_search_form.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1601,
+						"buffer_size": 294,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								584,
-								584
+								45,
+								45
 							]
 						],
 						"settings":
@@ -407,9 +438,7 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -420,19 +449,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "config/database.yml",
+					"file": "app/assets/stylesheets/crm/crm_misc.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 551,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								395,
-								395
+								311,
+								311
 							]
 						],
 						"settings":
@@ -440,13 +469,78 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/YAML/YAML.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/crm/users/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/stylesheets/crm/crm.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 48911,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3158,
+								3174
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 2255.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
@@ -511,12 +605,28 @@
 		"selected_items":
 		[
 			[
-				"ifro",
-				"~/www/ifrogcrm_old.rails/ifrogcrm_old.sublime-project"
+				"gg",
+				"~/www/gg.dev/gg.sublime-project"
 			],
 			[
 				"ifrog",
-				"~/www/rails/ifrogcrm/ifrogcrm.sublime-project"
+				"~/www/ifrogcrm_old.rails/ifrogcrm_old.sublime-project"
+			],
+			[
+				"",
+				"~/www/ifrogcrm_old.rails/ifrogcrm_old.sublime-project"
+			],
+			[
+				"ra",
+				"~/www/ifrogcrm.rails/ifrogcrm-rails.sublime-workspace"
+			],
+			[
+				"rai",
+				"~/www/ifrogcrm.rails/ifrogcrm-rails.sublime-workspace"
+			],
+			[
+				"ifro",
+				"~/www/ifrogcrm_old.rails/ifrogcrm_old.sublime-project"
 			],
 			[
 				"ifo",
@@ -556,10 +666,6 @@
 			],
 			[
 				"ggte",
-				"~/www/ggtest.dev/ggtest.sublime-project"
-			],
-			[
-				"gg",
 				"~/www/ggtest.dev/ggtest.sublime-project"
 			],
 			[

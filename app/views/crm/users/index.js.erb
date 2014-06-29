@@ -1,0 +1,4 @@
+$('#list-items').empty();
+<% unless @crm_users.blank? %>
+	$('#list-items').append('<%= j render(@crm_users) %>');
+<% end %>

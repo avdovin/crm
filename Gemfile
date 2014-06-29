@@ -36,10 +36,10 @@ gem 'simple_form'
 
 gem 'russian', '~> 0.6.0'
 
-gem 'devise'
-
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'will_paginate'
 
 # Use unicorn as the app server
 # gem 'unicorn'

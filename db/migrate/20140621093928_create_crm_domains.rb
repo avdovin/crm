@@ -5,7 +5,7 @@ class CreateCrmDomains < ActiveRecord::Migration
 			t.date    	:paiddate, :default => '0000-00-00'
 			t.date    	:regdate, :default => '0000-00-00'
 			t.integer 	:access_id
-			t.text	 	  :comment
+			t.text	 		:comment
 
     	t.timestamps
     end

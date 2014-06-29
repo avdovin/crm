@@ -21,15 +21,17 @@
       <ul class="add-links">
         <li><a href="<%= new_crm_domain_path %>" <%== controller_name == 'domains' ? "class='current'" : "" %> id="add-new-domain">Домен</a></li>
         <li><a href="<%= new_crm_access_path %>" <%== controller_name == 'accesses' ? "class='current'" : "" %> id="add-new-access">Доступы</a></li>
+        <li><a href="<%= new_crm_user_path %>" <%== controller_name == 'users' ? "class='current'" : "" %> id="add-new-access">Пользователя</a></li>
       </ul>
     </li>
     <li><a class="<%= controller_name == 'domains' ? 'current' : '' %>" href="<%= crm_domains_path %>" style="background-image: url(/crm/img/list.png)">Домены</a></li>
     <li><a class="<%= controller_name == 'accesses' ? 'current' : '' %>" href="<%= crm_accesses_path %>" style="background-image: url(/crm/img/list.png)">Доступы</a></li>
+    <li><a class="<%= controller_name == 'users' ? 'current' : '' %>" href="<%= crm_users_path %>" style="background-image: url(/crm/img/list.png)">Пользователи</a></li>
 
 
   </ul>
   <div id="auth-logged">
-    Здравствуйте, <a href="" id="auth-logged-username"><%= current_crmuser.name %></a>
-    <%= link_to 'Выйти', destroy_crmuser_session_path, :method => :delete %>
+    Здравствуйте, <a href="<%= edit_crm_user_path(current_user) %>" id="auth-logged-username"><%= current_user.nickname %></a>
+
   </div>
 </div>

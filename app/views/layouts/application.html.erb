@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>iFrogCRM</title>
+  <title><%= yield :title %></title>
   <meta name="keywords" content=""/>
   <meta name="description" content=""/>
   <meta name="robots" content="index, follow">
@@ -15,7 +15,7 @@
 
   <%= csrf_meta_tags %>
 </head>
-<% if params[:id] || action_name == 'new' %>
+<% if action_name == 'new' or action_name == 'edit' or action_name == 'create' %>
     <body>
 <% else %>
     <body class="nobg">
@@ -29,6 +29,10 @@
     <%= render 'crm/top' %>
 
     <div id="container">
+      <% if(action_name == 'index') %>
+        <%= render 'Crm/pagination' %>
+      <% end %>
+
       <%= yield %>
     </div>
   </div>

@@ -1,0 +1,9 @@
+.message {font-size: 15px;font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;}
+.message-notice {color: green;}
+.message-alert {color: red;}
+
+.anketa .error {font-size: 13px;font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif; color: red;}
+
+
+/* Preloaders */
+#search .loading{opacity:0;background: #fff url(../crm/img/preloaders/14x14.gif) no-repeat center;width:14px;height:14px;float:left;padding: 6px 20px 0 0;}

@@ -3,23 +3,23 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-  before_action :authenticate_crmuser!
+  before_filter   :authorize
 
-  #before_filter :update_sanitized_params, if: :devise_controller?
+  helper_method :current_user, :logged_in?
 
-  layout :layout_by_resource
-
-  def layout_by_resource
-    if devise_controller? and !crmuser_signed_in?
-      'auth'
-    else
-      'application'
-    end
+  def current_user
+    return unless session[:user_id]
+    @current_user ||= Crm::User.find(session[:user_id])
   end
 
-  # protected
-  #   def update_sanitized_params
+  def logged_in?
+    current_user != nil
+  end
 
-  #     devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:email, :password) }
-  #   end
+  protected
+    def authorize
+      unless Crm::User::find_by_id(session[:user_id])
+        redirect_to login_url, notice: "Пожалуйста, пройдите авторизацию"
+    end
+  end
 end

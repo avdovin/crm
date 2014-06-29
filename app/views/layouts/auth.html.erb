@@ -11,6 +11,31 @@
 
 </head>
 <body>
+  <table id="auth-login">
+    <tr>
+        <td>
+            <%= form_tag do %>
+                <div class="clearfix">
+                    <label>
+                        <span>E-mail</span>
+                        <%= text_field_tag :email, params[:email], :autofocus=>true %>
+                    </label>
+                    <label>
+                        <span>Пароль</span>
+                        <%= password_field_tag :password, params[:password] %>
+                    </label>
+                </div>
+                <% if flash[:alert] %>
+                  <div id="auth-login-errors">
+                    <%= flash[:alert] %>
+                  </div>
+                <% end %>
+                <%= submit_tag "Войти" %>
+            <% end %>
+        </td>
+    </tr>
+  </table>
+
 <script>
     $(document).ready(function(){
         $("#auth-login form").submit(function() {
@@ -40,9 +65,5 @@
         return re.test(email);
     }
 </script>
-
-  <%= yield %>
-
-
 </body>
 </html>

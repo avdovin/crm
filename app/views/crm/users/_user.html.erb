@@ -1,0 +1,7 @@
+<tr onClick="javascript:document.location.href='<%= edit_crm_user_path(user) %>'" class="yellow items" data-item-id="<%= user.id %>">
+  <td><input type="checkbox" class="chb_selectItem" value="<%= user.id %>"/></td>
+  <td><%= user.nickname %></td>
+  <td><%= user.email %></td>
+  <td><a class="action" href="<%= edit_crm_user_path(user) %>" title="Смотреть"><img src="/crm/img/edit.png" width="16" height="16" alt=""></a></td>
+</tr>
+

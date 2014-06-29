@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CrmuserTest < ActiveSupport::TestCase
+class Crm::UserTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

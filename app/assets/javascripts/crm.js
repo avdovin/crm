@@ -2,6 +2,7 @@
  *= require_self
  *= require crm/crm
  *= require crm/crm_common
+ *= require crm/crm_edit
  *= require crm/crm_edit_popup
  *= require crm/crm_edit_popup_common
  *= require crm/jquery-ui-1.9.2.custom.min

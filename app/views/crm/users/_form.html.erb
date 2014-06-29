@@ -1,0 +1,47 @@
+<h1><%== params[:id] ? "Редактирование пользователя «" + @crm_user.nickname + "»" : "Добавление нового пользователя" %></h1>
+<div class="rightCol">
+
+	<% if params[:id] %>
+		<%= link_to 'Удалить', crm_user_path(@crm_user), :confirm => "Вы уверены что хотите удалить пользователя?", :method => :delete, :class => 'rightBut', :id => 'right-delete' %>
+	<% end %>
+	<%= link_to 'Сохранить и продолжить', '', :class => 'rightBut submit', :id => 'save-and-continue' %>
+	<%= link_to 'Сохранить и закрыть', '', :class => 'rightBut submit', :id => 'save-and-exit' %>
+
+	<br />
+	<a href="<%= crm_users_path %>" class="rightBut" id="right-delete">К списку пользователей</a>
+</div>
+<div class="leftCol">
+		<ul class="tabs-menu">
+				<li style="z-index:10;" class="current"><a href="#" style="background-image: url(/crm/img/icon_calend.png);">Карточка пользователя</a><ins></ins></li>
+		</ul>
+		<div class="anketa-block">
+			<%= render "Crm/msg_item_error", object: @crm_user %>
+			<%= render 'crm/msg' %>
+
+			<%= simple_form_for([@crm_user]) do |f| %>
+				<%= hidden_field_tag 'continue', '0' %>
+
+				<table class="anketa float-table-3col">
+					<tr>
+						<td>
+							<label>
+									<%= f.input :nickname, label: 'Имя'%>
+							</label>
+						</td>
+						<td>
+							<label>
+									<%= f.input :email, label: 'E-mail'%>
+							</label>
+						</td>
+						<td>
+							<label>
+									<%= f.input :password, label: 'Пароль'%>
+							</label>
+							<label>
+									<%= f.input :password_confirmation, label: 'Подтверждения пароля' %>
+							</label>
+						</td>
+					</tr>
+				</table>
+		<% end %>
+</div>

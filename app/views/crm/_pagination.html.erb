@@ -1,0 +1,17 @@
+<ul id="pagination" style="float: right; margin: 5px 0;">
+	<li>Отображать по</li>
+	<li><a href="#" data-limit="25" >25</a></li>
+	<li><a href="#" data-limit="50" >50</a></li>
+	<li><a href="#" data-limit="75" >75</a></li>
+	<li><a href="#" data-limit="100" >100</a></li>
+	<li><a href="#" data-limit="" class="current">все</a></li>
+</ul>
+<script type="text/javascript">
+	$("#pagination a").click(function(){
+		$("#pagination a").removeClass('current');
+		$(this).addClass('current');
+
+		items_list( filter());
+		return false;
+	})
+</script>
